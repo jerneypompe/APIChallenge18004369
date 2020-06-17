@@ -98,17 +98,7 @@ resorts.features.forEach(function(marker){
 //OpenWeathermap API 
 function weatherBox(cityID){
   var Apikey = '44689270c14a373a0d2529c4958dafff';
-  //Volgorde cityId's: 
-  // 2658813
-  // 1153669
-  // 1282028
-  // 4034636
-  // 4662168
   fetch('https://api.openweathermap.org/data/2.5/weather?id=' + 2658813+ '&appid=' + Apikey) 
-  // fetch('https://api.openweathermap.org/data/2.5/weather?id=' + 1153669+ '&appid=' + Apikey) 
-  // fetch('https://api.openweathermap.org/data/2.5/weather?id=' + 1282028+ '&appid=' + Apikey) 
-  // fetch('https://api.openweathermap.org/data/2.5/weather?id=' + 4034636+ '&appid=' + Apikey) 
-  // fetch('https://api.openweathermap.org/data/2.5/weather?id=' + 4662168+ '&appid=' + Apikey) 
   .then(function(response) { 
     return response.json() 
   }) 
